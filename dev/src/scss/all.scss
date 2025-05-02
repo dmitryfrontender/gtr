@@ -9,6 +9,8 @@
 @import "includes/media-queries";
 // fonts
 // @include font-face('Ico Moon', '../fonts/icomoon', normal, normal);
+@import "fonts";
+@import "icons";
 
 html{
 	height:100%;
@@ -17,7 +19,7 @@ html{
 	-ms-text-size-adjust: 100%;
 }
 body{
-	font: #{$site_font_size}/#{$site_line_height} $default_font;
+	font: $site_font_weight #{$site_font_size}/#{$site_line_height} $default_font;
 	// min-height:100%;
 	height: 100%;
 	min-width:320px;
@@ -40,6 +42,15 @@ input{
 	-webkit-border-radius:0;
 	-moz-border-radius:0;
 	border-radius:0;
+	color: #fff;
+}
+
+button {
+	color: #fff;
+	cursor: pointer;
+	border: none;
+	display: inline-block;
+	background: none;
 }
 
 *{
@@ -70,6 +81,36 @@ input, textarea {
 	@include placeholder {color: $placeholder_color;}
 	&.placeholder {color: $placeholder_color !important;}
 }
+
+input::placeholder,
+textarea::placeholder {
+	font-size: 16px;
+	color: #8B8B8B;
+	font-weight: 400;
+	opacity: 1;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+	font-size: 16px;
+	color: #8B8B8B;
+	font-weight: 400;
+}
+
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+	font-size: 16px;
+	color: #8B8B8B;
+	font-weight: 400;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+	font-size: 16px;
+	color: #8B8B8B;
+	font-weight: 400;
+}
+
 // separator
 // @extend %separator;
 %separator {
@@ -110,8 +151,35 @@ input, textarea {
 	width: 100%;
 	height: 100%;
 	table-layout: fixed;
+	padding: 10px 0;
+	overflow: hidden;
 }
-.container{}
+
+.container{
+	max-width: 1840px;
+	margin: 0 auto;
+	padding: 0 20px;
+	@media(max-width: 640px){
+		padding: 0 10px;
+	}
+}
+
+.btn {
+	font-size: 12px;
+	padding: 8px 12px;
+	display: inline-block;
+	border-radius: 8px;
+	border: 1px solid #35363A;
+	transition: background-color .3s, color .3s, border-color .3s;
+
+	@media(hover: hover) and (pointer: fine){
+		&:hover{
+			background: #FFA31A;
+			border-color: #FFA31A;
+		}
+	}
+}
+
 //icon
 // [class^="icon-"], [class*=" icon-"] {
 // 	/* use !important to prevent issues with browser extensions that change fonts */
