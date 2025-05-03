@@ -11,6 +11,7 @@
 	padding: 18px 30px;
 	border-radius: 8px;
 	border: 1px solid rgba(156, 156, 156, 0.20);
+	margin-bottom: 24px;
 
 	@media(max-width: 1024px){
 		padding: 18px;
@@ -115,6 +116,16 @@
 		background-color: #fff;
 		border-radius: 4px;
 		transition: all .3s ease-in-out;
+	}
+
+	@media(hover: hover) and (pointer: fine){
+		&:hover{
+			border-color: #FFA31A;
+
+			.line {
+				background-color: #FFA31A;
+			}
+		}
 	}
 
 	@media(max-width: 1400px){
@@ -336,8 +347,13 @@
 			&:hover {
 				color: #f89427;
 
+				.svg-icon {
+					stroke: #f89427;
+				}
+
 				.arrow {
 					color: #f89427;
+					stroke: none;
 				}
 			}
 		}
@@ -363,11 +379,11 @@
 			right: -19px;
 		}
 		@media(max-width: 768px){
-			top: calc(100% + 12px);
+			top: calc(100% + 7px);
 		}
 		@media(max-width: 390px){
 			right: -10px;
-			top: calc(100% + 4px);
+			top: calc(100% - 1px);
 		}
 	}
 
@@ -436,6 +452,12 @@
 	font-size: 26px;
 	border: 1px solid rgba(156, 156, 156, 0.20);
 
+	.svg-icon {
+		stroke: #9C9C9C;
+		color: transparent;
+		transition: stroke .3s;
+	}
+
 	.img {
 		display: block;
 		width: 100%;
@@ -457,9 +479,13 @@
 .drop {
 	position: relative;
 	&.open-drop {
+		.svg-icon {
+			stroke: #f89427;
+		}
 		.arrow {
 			transform: rotate(180deg);
 			color: #f89427;
+			stroke: none;
 		}
 		.drop-holder {
 			transform: translate3d(0, 18px, 0);
@@ -493,12 +519,21 @@
 		margin-bottom: 2px;
 		padding: 12px 10px;
 		font-size: 15px;
+		transition: color .3s;
 
 		@media(hover: hover) and (pointer: fine){
 			&:hover{
+				color: #f89427;
 				.value {
 					color: #fff;
 					background-color: #f89427;
+				}
+				.svg-icon {
+					stroke: #f89427;
+				}
+				.icon-later {
+					fill: #f89427;
+					stroke: none;
 				}
 			}
 		}
@@ -508,12 +543,32 @@
 		&.logout {
 			border-top: 1px solid rgba(156, 156, 156, 0.20);
 			color: #E55858;
+			.svg-icon {
+				stroke: #E55858;
+			}
+
+
+			@media(hover: hover) and (pointer: fine){
+				&:hover{
+					color: #f89427;
+
+					.svg-icon {
+						stroke: #f89427;
+					}
+				}
+			}
 		}
 		.svg-icon {
 			flex-shrink: 0;
 			margin-right: 10px;
 			font-size: 22px;
 			color: transparent;
+			stroke: #fff;
+			transition: stroke .3s, fill .3s;
+		}
+		.icon-later {
+			fill: #fff;
+			stroke: none;
 		}
 		.text {
 			flex-grow: 1;
