@@ -20,46 +20,6 @@
 	background: #26272C;
 	text-align: center;
 	margin: 0 10px;
-	position: relative;
-	overflow: hidden;
-
-	&:before,
-	&:after {
-		content: "";
-		position: absolute;
-		width: 380px;
-		height: 380px;
-		background: radial-gradient(circle, rgba(255, 165, 0, 0.4) 0%, rgba(255, 165, 0, 0) 70%);
-		border-radius: 50%;
-		filter: blur(30px);
-	}
-
-	&:before {
-		bottom: -125%;
-		left: 10%;
-
-		@media(max-width: 1300px){
-			bottom: -88%;
-			left: 27%;
-		}
-	}
-
-	&:after {
-		top: -77%;
-		right: 12%;
-
-		@media(max-width: 1300px){
-			top: -65%;
-			right: 2%;
-		}
-		@media(max-width: 1024px){
-			top: -100%;
-			right: -6%;
-		}
-		@media(max-width: 480px){
-			display: none;
-		}
-	}
 }
 
 
@@ -87,6 +47,11 @@
 		&:hover{
 			color: #f89427;
 		}
+	}
+
+	@media(max-width: 480px){
+		font-size: 14px;
+		margin: 0 10px;
 	}
 }
 
