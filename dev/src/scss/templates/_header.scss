@@ -16,6 +16,9 @@
 	@media(max-width: 1024px){
 		padding: 18px;
 	}
+	@media(max-width: 768px){
+		padding: 12px 10px;
+	}
 	@media(max-width: 390px){
 		padding: 10px;
 	}
@@ -92,7 +95,7 @@
 			width: 140px;
 		}
 		@media(max-width: 390px){
-			width: 124px;
+			width: 120px;
 		}
 	}
 }
@@ -163,10 +166,10 @@
     	left: -19px;
     }
 	@media(max-width: 768px){
-		top: calc(100% + 18px);
+		top: calc(100% + 12px);
+		left: -10px;
 	}
 	@media(max-width: 390px){
-		left: -10px;
 		top: calc(100% + 10px);
 	}
 }
@@ -347,25 +350,21 @@
 			&:hover {
 				color: #f89427;
 
-				.svg-icon {
-					stroke: #f89427;
-				}
-
 				.arrow {
 					color: #f89427;
-					stroke: none;
 				}
 			}
 		}
 		.arrow {
-			margin-left: 10px;
+			margin-left: 3px;
 			flex-shrink: 0;
-			font-size: 14px;
+			font-size: 24px;
 			transition: color .3s, transform .3s;
 			color: #8B8B8B;
 
 			@media(max-width: 390px){
-				margin-left: 5px;
+				font-size: 22px;
+				margin-left: 0;
 			}
 		}
 	}
@@ -379,10 +378,10 @@
 			right: -19px;
 		}
 		@media(max-width: 768px){
-			top: calc(100% + 7px);
+			top: calc(100% + 1px);
+			right: -10px;
 		}
 		@media(max-width: 390px){
-			right: -10px;
 			top: calc(100% - 1px);
 		}
 	}
@@ -479,13 +478,9 @@
 .drop {
 	position: relative;
 	&.open-drop {
-		.svg-icon {
-			stroke: #f89427;
-		}
 		.arrow {
 			transform: rotate(180deg);
 			color: #f89427;
-			stroke: none;
 		}
 		.drop-holder {
 			transform: translate3d(0, 18px, 0);
