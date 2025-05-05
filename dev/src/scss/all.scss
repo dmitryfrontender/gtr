@@ -7,9 +7,12 @@
 // @import "includes/normalize";
 // media quaries
 @import "includes/media-queries";
+// plugins";
+@import "includes/plugins";
 // fonts
 // @include font-face('Ico Moon', '../fonts/icomoon', normal, normal);
 @import "fonts";
+// icons";
 @import "icons";
 
 html{
@@ -159,7 +162,7 @@ textarea:-ms-input-placeholder {
 	max-width: 1840px;
 	margin: 0 auto;
 	padding: 0 20px;
-	@media(max-width: 640px){
+	@media(max-width: 768px){
 		padding: 0 10px;
 	}
 }
@@ -167,14 +170,15 @@ textarea:-ms-input-placeholder {
 .btn {
 	font-size: 12px;
 	padding: 8px 12px;
-	display: inline-block;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
 	border-radius: 8px;
 	border: 1px solid #35363A;
 	transition: background-color .3s, color .3s, border-color .3s;
 
 	@media(hover: hover) and (pointer: fine){
 		&:hover{
-			background: #FFA31A;
 			border-color: #FFA31A;
 		}
 	}
