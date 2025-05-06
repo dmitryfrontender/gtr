@@ -4,15 +4,7 @@ $(function() {
 	initMobileSearch();
 });
 
-$(window).on('load', function () {
-	//calls functions
-});
-
 $(window).on('resize', function () {
-	//calls functions
-});
-
-$(window).load(function() {
 	//calls functions
 });
 
@@ -80,3 +72,10 @@ function initMobileSearch() {
 		}
 	});
 }
+
+$("body").on("click", ".js-sort", function(e) {
+	e.stopPropagation();
+	e.preventDefault();
+	var parentItem = $(this).closest(".item, .sort");
+	parentItem.toggleClass("open-sort");
+});

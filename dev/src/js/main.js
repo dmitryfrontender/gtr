@@ -4,15 +4,7 @@ $(function() {
 	initMobileSearch();
 });
 
-$(window).on('load', function () {
-	//calls functions
-});
-
 $(window).on('resize', function () {
-	//calls functions
-});
-
-$(window).load(function() {
 	//calls functions
 });
 
