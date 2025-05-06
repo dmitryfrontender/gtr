@@ -141,3 +141,31 @@ $("body").on("click", ".js-sort", function(e) {
 	var parentItem = $(this).closest(".item, .sort");
 	parentItem.toggleClass("open-sort");
 });
+
+$("body").on("click", ".js-comment", function(e) {
+	e.stopPropagation();
+	e.preventDefault();
+	var parentItem = $(this).closest(".js-comment-wrapper");
+	parentItem.addClass("active");
+});
+
+$("body").on("click", ".js-cancel-btn", function(e) {
+	e.stopPropagation();
+	e.preventDefault();
+	var parentItem = $(this).closest(".js-comment-wrapper");
+	parentItem.removeClass("active");
+});
+
+$("body").on("click", ".js-reply", function(e) {
+	e.stopPropagation();
+	e.preventDefault();
+	var parentItem = $(this).closest(".js-comment-wrapper");
+	parentItem.toggleClass("open-replies");
+});
+
+$("body").on("click", ".js-more-reply", function(e) {
+	e.stopPropagation();
+	e.preventDefault();
+	var parentItem = $(this).closest(".js-comment-wrapper");
+	parentItem.toggleClass("more-replies");
+});
