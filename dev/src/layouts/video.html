@@ -81,29 +81,28 @@
 		<div class="video-info">
 			<div class="buttons-holder">
 				<div class="rating-info">
-					<div class="rating-fav">
-						<div class="rating-container rating-holder">
-							<a href="#like" class="rate-like btn like" data-video-id="69549" data-vote="5">
-								<svg class="icon like-icon active">
-									<use xlink:href="#vid-thumb-up"></use>
-								</svg>
-								<span class="quantity">
-									47
-								</span>
-							</a>
-							<a href="#dislike" class="rate-dislike btn dislike" data-video-id="69549" data-vote="0">
-								<svg class="icon like-icon">
-									<use xlink:href="#vid-thumb-down"></use>
-								</svg>
-								<span class="quantity">
-									7
-								</span>
-							</a>
-						</div>
+					<div class="rating-container rating-holder">
+						<a href="#like" class="rate-like like" data-video-id="69549" data-vote="5">
+							<svg class="icon like-icon active">
+								<use xlink:href="#vid-thumb-up"></use>
+							</svg>
+							<span class="quantity">
+								47
+							</span>
+						</a>
+						<span class="rate-separator"></span>
+						<a href="#dislike" class="rate-dislike dislike" data-video-id="69549" data-vote="0">
+							<svg class="icon like-icon">
+								<use xlink:href="#vid-thumb-down"></use>
+							</svg>
+							<span class="quantity">
+								7
+							</span>
+						</a>
 					</div>
 					<div class="info">
 						<div class="item">
-							<svg class="icon">
+							<svg class="icon eye-icon">
 								<use xlink:href="#cat-eye-grey"></use>
 							</svg>
 							<span class="text">3,205</span>
@@ -128,6 +127,17 @@
 					</a>
 				{{/repeat}}
 			</div>
+
+			<div class="models-block">
+				{{#repeat 5}}
+					<a href="#" class="model">
+						<svg class='icon fill'>
+							<use xlink:href='#nav-models'/>
+						</svg>
+						<span>Модель</span>
+					</a>
+				{{/repeat}}
+			</div>
 			
 			<div class="info-block" data-opened="info-video">
 				<p class="description">
@@ -142,7 +152,9 @@
 	
 		<div class="wrap-comments">
 			<div class="comment-block">
-				<textarea placeholder="Комментарий"></textarea>
+				<div class="textarea" contenteditable="true">
+                    Комментарий
+                </div>
 				<div class="btns-block">
 					<button class="btn cancel-btn">Отмена</button>
 					<button class="btn comment-btn">
@@ -155,31 +167,9 @@
 			</div>
 			
 			<div class="comments-section">
-				<div class="comments-section__item">
-					<div class="comments-section__item-avatar">
-						<img src="images/avatar.jpg" alt="avatar">
-					</div>
-					<div class="comments-section__item-info">
-						<div class="comments-section__item-info-top">
-							<span class="name">Алексей</span>
-							<span class="date">12 часов назад</span>
-						</div>
-						<div class="comments-section__item-info-text">
-							<p>Клёвая сучка. Есть ещё видео с ней?</p>
-						</div>
-						<div class="comments-section__item-info-actions">
-							<button>
-								<svg class="svg-icon"><use xlink:href="#vid-thumb-up"></use></svg>
-								<span>12</span>
-							</button>
-							<button>
-								<svg class="svg-icon"><use xlink:href="#vid-thumb-down"></use></svg>
-								<span>12</span>
-							</button>
-							<button>Ответить</button>
-						</div>
-					</div>
-				</div>
+				{{#repeat 5}}
+					{{> video-comment}}
+				{{/repeat}}
 			</div>
 		</div>
 	</div>
