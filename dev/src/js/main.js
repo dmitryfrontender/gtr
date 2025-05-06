@@ -134,3 +134,10 @@ function initCountrySelect() {
 		}
 	});
 }
+
+$("body").on("click", ".js-sort", function(e) {
+	e.stopPropagation();
+	e.preventDefault();
+	var parentItem = $(this).closest(".item, .sort");
+	parentItem.toggleClass("open-sort");
+});

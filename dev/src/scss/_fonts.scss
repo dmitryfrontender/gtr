@@ -23,3 +23,16 @@
     font-style: normal;
     font-display: swap;
 }
+
+@font-face {
+    font-family: 'Aldrich';
+    src: url('../fonts/Aldrich-Regular.eot');
+    src: url('../fonts/Aldrich-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Aldrich-Regular.woff2') format('woff2'),
+        url('../fonts/Aldrich-Regular.woff') format('woff'),
+        url('../fonts/Aldrich-Regular.ttf') format('truetype'),
+        url('../fonts/Aldrich-Regular.svg#Aldrich-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
