@@ -1,4 +1,195 @@
 {{> header pageTitle="Edit profile"}}
 
+<div class="main-layout">
+	
+	{{> sidebar-edit-profile}}
+
+	<div class="content">
+		<div class="edit-profile">
+			<div class="section">
+				<div class="headline second">
+					<div class="title-holder">
+						<h1 class="title">Редактировать профиль</h1>
+					</div>
+				</div>
+
+				<div class="tabs">
+					<ul class="tabs-caption">
+						<li class="tab-btn active">
+							<svg class="svg-icon"><use xlink:href='#prof-settings'/></svg>
+							<div class="name">Основные</div>
+						</li>
+						<li class="tab-btn">
+							<svg class="svg-icon"><use xlink:href='#reg-lock'/></svg>
+							<div class="name">Безопасность</div>
+						</li>
+					</ul>
+
+					<div class="tabs-content active">
+						<form action="#" class="form">
+							<div class="row">
+								<div class="edit-avatar">
+									<div class="avatar">
+										<!-- avatar -->
+								
+										<!-- <img src="images/avatar.jpg" alt="Профиль" class="img"> -->
+								
+										<!-- no-avatar -->
+								
+										<svg class="svg-icon"><use xlink:href='#chat-profile'/></svg>
+									</div>
+									<div class="edit-text">
+										<div class="name">Maxpower</div>
+										<div class="buttons">
+											<a href="#" class="btn">
+												<svg class="svg-icon"><use xlink:href='#prof-upload'/></svg>
+												<span class="text">Загрузить аватар</span>
+											</a>
+											<a href="#" class="btn">
+												<svg class="svg-icon"><use xlink:href='#prof-delete'/></svg>
+												<span class="text">Удалить</span>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="row">
+								<label class="label">Страна</label>
+								<select class="selectbox" id="country-id" style="width: 100%;">
+									<option value="" data-img="images/flags/world.svg">Выбрать</option>
+									<option value="DE" data-img="images/flags/de.jpg"> Германия</option>
+									<option value="ES" data-img="images/flags/es.jpg">Испания</option>
+									<option value="PT" data-img="images/flags/pt.jpg">Португалия</option>
+									<option value="US" data-img="images/flags/us.jpg">США</option>
+									<option value="DE" data-img="images/flags/de.jpg">Германия</option>
+									<option value="ES" data-img="images/flags/es.jpg">Испания</option>
+									<option value="PT" data-img="images/flags/pt.jpg">Португалия</option>
+									<option value="US" data-img="images/flags/us.jpg">США</option>
+									<option value="DE" data-img="images/flags/de.jpg">Германия</option>
+								</select>
+							</div>
+
+							<div class="row">
+								<label class="label">Город</label>
+								<input type="text" class="textfield">
+							</div>
+
+							<div class="row">
+								<label class="label">Пол</label>
+								<select class="selectbox" style="width: 100%;" data-placeholder="Выбрать">
+									<option value=""></option>
+									<option value="BER">Мужской</option>
+									<option value="MAD">Женский</option>
+									<option value="LIS">Пара</option>
+								</select>
+							</div>
+
+							<div class="row">
+								<label class="label">Семейное положение</label>
+								<select class="selectbox" style="width: 100%;" data-placeholder="Выбрать">
+									<option value=""></option>
+									<option value="MAD">В активном поиске</option>
+									<option value="LIS">В браке</option>
+									<option value="LIS">Разведен(а)</option>
+								</select>
+							</div>
+
+							<div class="row">
+								<label class="label">Ориентация</label>
+								<select class="selectbox" style="width: 100%;" data-placeholder="Выбрать">
+									<option value=""></option>
+									<option value="BER">Не уверен(а)</option>
+									<option value="MAD">Гетеросексуал(ка)</option>
+									<option value="LIS">Гей</option>
+									<option value="LIS">Лесби</option>
+								</select>
+							</div>
+
+							<div class="row">
+								<label class="label">День рождения</label>
+								<div class="cols-3">
+									<div class="col-3">
+										<select class="selectbox" style="width: 100%;" data-placeholder="День">
+											<option value=""></option>
+											<option value="BER">1</option>
+											<option value="MAD">2</option>
+											<option value="LIS">3</option>
+											<option value="LIS">4</option>
+										</select>
+									</div>
+									<div class="col-3">
+										<select class="selectbox" style="width: 100%;" data-placeholder="Месяц">
+											<option value=""></option>
+											<option value="BER">Январь</option>
+											<option value="MAD">Фвраль</option>
+											<option value="LIS">Март</option>
+											<option value="LIS">Апрель</option>
+										</select>
+									</div>
+									<div class="col-3">
+										<select class="selectbox" style="width: 100%;" data-placeholder="Год">
+											<option value=""></option>
+											<option value="BER">1950</option>
+											<option value="MAD">1951</option>
+											<option value="LIS">1952</option>
+											<option value="LIS">1953</option>
+										</select>
+									</div>
+								</div>
+							</div>
+
+							<div class="row">
+								<label class="label">О себе</label>
+								<textarea class="textfield"></textarea>
+							</div>
+							<div class="row">
+								<button type="submit" class="btn btn-submit">Сохранить</button>
+							</div>
+						</form>
+					</div>
+					<div class="tabs-content">
+						<form action="#" class="form">
+							<div class="rows">
+								<div class="title">Изменить пароль</div>
+								<div class="row">
+									<label class="label">Действующий пароль</label>
+									<input type="password" class="textfield">
+								</div>
+
+								<div class="row">
+									<label class="label">Новый пароль</label>
+									<input type="password" class="textfield" placeholder="Пароль (не менее 5 символов)">
+								</div>
+
+								<div class="row">
+									<label class="label">Подтвердите новый пароль</label>
+									<input type="password" class="textfield">
+								</div>
+							</div>
+							
+							<div class="rows">
+								<div class="title">Изменить E-mail</div>
+								<div class="row">
+									<label class="label">Действующий E-mail</label>
+									<input type="email" class="textfield">
+								</div>
+
+								<div class="row">
+									<label class="label">Новый E-mail</label>
+									<input type="email" class="textfield">
+								</div>
+
+								<div class="row">
+									<button type="submit" class="btn btn-submit">Сохранить</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 
 {{> footer}}

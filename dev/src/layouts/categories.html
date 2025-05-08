@@ -1,81 +1,149 @@
 {{> header pageTitle="Categories"}}
 
-<div class="section">
-	<div class="headline second">
-		<div class="title-holder">
-			<h2 class="title">Популярные категории</h2>
+<h1 class="heading">Категории порно видео</h1>
+
+<div class="main-layout">
+	
+	{{> sidebar-categories}}
+
+	<div class="content">
+		<div class="section sm">
+			<div class="headline-cat">
+				<div class="alphabet-bar">
+					<a href="#" class="letter">#</a>
+					<a href="#" class="letter">А</a>
+					<a href="#" class="letter">Б</a>
+					<a href="#" class="letter active">Г</a>
+					<a href="#" class="letter">Д</a>
+					<a href="#" class="letter">Ж</a>
+					<a href="#" class="letter">З</a>
+					<a href="#" class="letter">И</a>
+					<a href="#" class="letter">К</a>
+					<a href="#" class="letter">М</a>
+					<a href="#" class="letter">Н</a>
+					<a href="#" class="letter">О</a>
+					<a href="#" class="letter">П</a>
+					<a href="#" class="letter">Р</a>
+					<a href="#" class="letter">С</a>
+					<a href="#" class="letter">Т</a>
+					<a href="#" class="letter">Х</a>
+					<a href="#" class="letter">Ч</a>
+					<a href="#" class="letter">Э</a>
+				</div>
+
+				<div class="wrap-search">
+					<div class="filter-icon">
+						<div class="icon"></div>
+						<div class="icon"></div>
+						<div class="icon"></div>
+					</div>
+					<input type="text" placeholder="Поиск по тегам и категориям" class="search-input">
+					<button type="submit" class="search-submit">
+						<svg class="svg-icon"><use xlink:href="#search"></use></svg>
+					</button>
+				</div>
+			</div>
+			<div class="list-categories">
+				<a href="#" class="btn">
+					<svg class="svg-icon"><use xlink:href='#video-camera'/></svg>
+					<span class="text">Общие жанры</span>
+				</a>
+				<a href="#" class="btn">
+					<svg class="svg-icon"><use xlink:href='#body'/></svg>
+					<span class="text">Тело, волосы</span>
+				</a>
+				<a href="#" class="btn">
+					<svg class="svg-icon"><use xlink:href='#clothes'/></svg>
+					<span class="text">Одежда</span>
+				</a>
+				<a href="#" class="btn">
+					<svg class="svg-icon"><use xlink:href='#map-marker'/></svg>
+					<span class="text">Место</span>
+				</a>
+				<a href="#" class="btn">
+					<svg class="svg-icon"><use xlink:href='#poses'/></svg>
+					<span class="text">Позы/стили</span>
+				</a>
+				<a href="#" class="btn">
+					<svg class="svg-icon"><use xlink:href='#he-she'/></svg>
+					<span class="text">Он/Она</span>
+				</a>
+				<a href="#" class="btn">
+					<svg class="svg-icon"><use xlink:href='#18+'/></svg>
+					<span class="text">Прочее</span>
+				</a>
+			</div>
 		</div>
-	</div>
+		<div class="section sm">
+			<div class="headline second md">
+				<div class="title-holder">
+					<h2 class="title">Популярные категории</h2>
+				</div>
+			</div>
 
-	{{> categories-thumbs-cols-5-rows-4}}
+			{{> categories-thumbs-cols-5}}
 
-	<div class="link-all show-more">
-		<a href="#" class="sort-link">
-			<span class="text">Показать больше</span>
-			<span class="icon">
-				<svg class="svg-icon"><use xlink:href="#arrow-down"></use></svg>
-			</span>
-		</a>
-	</div>
-</div>
-
-<div class="section">
-	<div class="headline second">
-		<div class="title-holder">
-			<svg class="svg-icon"><use xlink:href='#video-camera'/></svg>
-			<h2 class="title">Производство</h2>
 		</div>
-	</div>
 
-	{{> categories-thumbs-cols-5}}
+		<div class="section sm">
+			<div class="headline second md">
+				<div class="title-holder">
+					<svg class="svg-icon"><use xlink:href='#video-camera'/></svg>
+					<h2 class="title">Производство</h2>
+				</div>
+			</div>
 
-	<div class="link-all show-more">
-		<a href="#" class="sort-link">
-			<span class="text">Показать больше</span>
-			<span class="icon">
-				<svg class="svg-icon"><use xlink:href="#arrow-down"></use></svg>
-			</span>
-		</a>
-	</div>
-</div>
+			{{> categories-thumbs-cols-5}}
 
-<div class="section">
-	<div class="headline second">
-		<div class="title-holder">
-			<svg class="svg-icon"><use xlink:href='#poses'/></svg>
-			<h2 class="title">Действие</h2>
+			<div class="link-all show-more">
+				<a href="#" class="sort-link">
+					<span class="text">Показать больше</span>
+					<span class="icon">
+						<svg class="svg-icon"><use xlink:href="#arrow-down"></use></svg>
+					</span>
+				</a>
+			</div>
 		</div>
-	</div>
 
-	{{> categories-thumbs-cols-5}}
+		<div class="section sm">
+			<div class="headline second md">
+				<div class="title-holder">
+					<svg class="svg-icon"><use xlink:href='#poses'/></svg>
+					<h2 class="title">Действие</h2>
+				</div>
+			</div>
 
-	<div class="link-all show-more">
-		<a href="#" class="sort-link">
-			<span class="text">Показать больше</span>
-			<span class="icon">
-				<svg class="svg-icon"><use xlink:href="#arrow-down"></use></svg>
-			</span>
-		</a>
-	</div>
-</div>
+			{{> categories-thumbs-cols-5}}
 
-<div class="section">
-	<div class="headline second">
-		<div class="title-holder">
-			<svg class="svg-icon"><use xlink:href='#handcuffs'/></svg>
-			<h2 class="title">Фетиш</h2>
+			<div class="link-all show-more">
+				<a href="#" class="sort-link">
+					<span class="text">Показать больше</span>
+					<span class="icon">
+						<svg class="svg-icon"><use xlink:href="#arrow-down"></use></svg>
+					</span>
+				</a>
+			</div>
 		</div>
-	</div>
 
-	{{> categories-thumbs-cols-5}}
+		<div class="section sm">
+			<div class="headline second md">
+				<div class="title-holder">
+					<svg class="svg-icon"><use xlink:href='#handcuffs'/></svg>
+					<h2 class="title">Фетиш</h2>
+				</div>
+			</div>
 
-	<div class="link-all show-more">
-		<a href="#" class="sort-link">
-			<span class="text">Показать больше</span>
-			<span class="icon">
-				<svg class="svg-icon"><use xlink:href="#arrow-down"></use></svg>
-			</span>
-		</a>
+			{{> categories-thumbs-cols-5}}
+
+			<div class="link-all show-more">
+				<a href="#" class="sort-link">
+					<span class="text">Показать больше</span>
+					<span class="icon">
+						<svg class="svg-icon"><use xlink:href="#arrow-down"></use></svg>
+					</span>
+				</a>
+			</div>
+		</div>
 	</div>
 </div>
 

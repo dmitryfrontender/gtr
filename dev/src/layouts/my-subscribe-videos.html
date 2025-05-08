@@ -1,29 +1,28 @@
-{{> header pageTitle="User subscribe"}}
+{{> header pageTitle="My subscribe videos"}}
 
 <div class="main-layout">
 	
-	{{> sidebar-user-profile}}
+	{{> sidebar-profile}}
 
 	<div class="content">
 		<div class="section">
 			<div class="headline second cols-2">
 				<div class="title-holder">
-					<h1 class="title">Подписки Diana</h1>
+					<h1 class="title">Видео из моих подписок</h1>
 				</div>
-
 				<div class="headline-btns">
-					<a href="user-subscribe-videos.html" class="btn">
+					<a href="#" class="btn active">
 						<svg class="svg-icon"><use xlink:href="#nav-videos"></use></svg>
 						<span class="text">Видео</span>
 					</a>
-					<a href="#" class="btn active">
+					<a href="#my-subscribe.html" class="btn">
 						<svg class="svg-icon subscribe"><use xlink:href="#cat-subscribe"></use></svg>
 						<span class="text">Подписки</span>
 					</a>
 				</div>
 			</div>
 
-			{{> thumbs-cols-7-vertical-subscribe-user}}
+			{{> thumbs-cols-4}}
 			{{> pagination}}
 			
 		</div>

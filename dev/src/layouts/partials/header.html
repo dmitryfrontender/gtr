@@ -12,8 +12,14 @@
 	<link rel="stylesheet" type="text/css" href="css/all.css" media="all">
 </head>
 
-<body>
-	<div class="wrapper">
+<body
+	{{#if bodyClass}}
+		class="{{bodyClass}}{{#if bodyClassCommunity}} {{bodyClassCommunity}}{{/if}}"
+	{{else}}
+		{{#if bodyClassCommunity}}class="{{bodyClassCommunity}}"{{/if}}
+	{{/if}}>
+
+	<div class="wrapper{{#if chatClass}} {{chatClass}}{{/if}}">
 		<div class="container">
 			<header class="header">
 				<div class="header-top">
@@ -137,6 +143,73 @@
 					</div>
 				</div>
 
+				{{#if bodyClassCommunity}}
+					<div class="wrap-btn-tags drop">
+						<div class="btn-tags btn js-drop">
+							<svg class="svg-icon"><use xlink:href='#brick'/></svg>
+							<span class="text">Топ категории</span>
+							<svg class="svg-icon arrow"><use xlink:href="#arrow-down"></use></svg>
+						</div>
+
+						<div class="mobile-categories">
+							<form action="#" class="form">
+								<div class="list-categories">
+									<a href="#" class="btn active">Большие сиськи</a>
+									<div class="checkbox-holder">
+										<input type="checkbox" class="checkbox" checked>
+										<label class="btn wrap-checkbox">+Жены</label>
+									</div>
+									<div class="checkbox-holder">
+										<input type="checkbox" class="checkbox" checked>
+										<label class="btn wrap-checkbox">+Домашнее порно</label>
+									</div>
+									<div class="checkbox-holder">
+										<input type="checkbox" class="checkbox" checked>
+										<label class="btn wrap-checkbox">+Измена</label>
+									</div>
+									<div class="checkbox-holder">
+										<input type="checkbox" class="checkbox">
+										<label class="btn wrap-checkbox">+Свингеры</label>
+									</div>
+									<div class="checkbox-holder">
+										<input type="checkbox" class="checkbox">
+										<label class="btn wrap-checkbox">+Куколд</label>
+									</div>
+									<div class="checkbox-holder">
+										<input type="checkbox" class="checkbox">
+										<label class="btn wrap-checkbox">+Брюнетки</label>
+									</div>
+									<div class="checkbox-holder">
+										<input type="checkbox" class="checkbox">
+										<label class="btn wrap-checkbox">+Раком</label>
+									</div>
+									<div class="checkbox-holder">
+										<input type="checkbox" class="checkbox">
+										<label class="btn wrap-checkbox">+Чулки и колготки</label>
+									</div>
+									<div class="checkbox-holder">
+										<input type="checkbox" class="checkbox">
+										<label class="btn wrap-checkbox">+Раком</label>
+									</div>
+									<div class="checkbox-holder">
+										<input type="checkbox" class="checkbox">
+										<label class="btn wrap-checkbox">+Зрелые</label>
+									</div>
+									<div class="checkbox-holder">
+										<input type="checkbox" class="checkbox">
+										<label class="btn wrap-checkbox">+Куколд</label>
+									</div>
+									<div class="checkbox-holder">
+										<input type="checkbox" class="checkbox">
+										<label class="btn wrap-checkbox">+Кончил в рот</label>
+									</div>
+									<a href="#" class="btn all-link">Все</a>
+								</div>
+							</form>
+						</div>
+					</div>
+				{{/if}}
+
 				<div class="header-tags">
 					<a href="#" class="btn">Порно фильмы</a>
 					<a href="#" class="btn">Волосатые</a>
@@ -157,6 +230,7 @@
 					<a href="#" class="btn">В машине</a>
 					<a href="#" class="btn">Большие сиськи</a>
 				</div>
+				
 			</header>
 		</div>
 		<div class="main">
