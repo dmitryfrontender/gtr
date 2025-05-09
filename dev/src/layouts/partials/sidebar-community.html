@@ -1,0 +1,98 @@
+<div class="btn btn-filter">
+	<div class="filter-icon">
+		<div class="icon"></div>
+		<div class="icon"></div>
+		<div class="icon"></div>
+	</div>
+	<div class="text">Фильтр</div>
+	<button type="button" class="btn-close">
+		<svg class="svg-icon"><use xlink:href="#close"></use></svg>
+	</button>
+</div>
+
+<div class="sidebar sidebar-community">
+	<form action="#" class="form">
+		<div class="row">
+			<div class="wrap-search">
+				<svg class="svg-icon icon-user"><use xlink:href="#prof-friends"></use></svg>
+				<input type="text" placeholder="Поиск по имени" class="search-input">
+				<button type="submit" class="search-submit">
+					<svg class="svg-icon"><use xlink:href="#search"></use></svg>
+				</button>
+			</div>
+		</div>
+		<div class="row">
+			<label class="label">Ищу</label>
+			<div class="block-radios">
+				<div class="col">
+					<input type="radio" id="flag_gender_1" class="checkbox" name="gender_id" value="1">
+					<label class="label" for="flag_gender_1">
+						<svg class="svg-icon"><use xlink:href="#male-icon"></use></svg>
+						<span>Мужчину</span>
+					</label>
+				</div>
+				<div class="col">
+					<input type="radio" id="flag_gender_2" class="checkbox" name="gender_id" value="2" checked="">
+					<label class="label" for="flag_gender_2">
+						<svg class="svg-icon"><use xlink:href="#female-icon"></use></svg>
+						<span>Женщину</span>
+					</label>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<label class="label">Возраст</label>
+			<div class="range-slider-holder">
+				<div class="inform-holder">
+					<div class="inform-item">
+						<input type="text" class="number js-from1" disabled name="age_from">
+					</div>
+					-
+					<div class="inform-item">
+						<input type="text" class="number js-to1" disabled name="age_to">
+					</div>
+				</div>
+				<input type="text" class="js-range-slider1"/>
+			</div>
+		</div>
+		<div class="row">
+			<label class="label">Страна</label>
+			<select class="selectbox" id="country-id" style="width: 100%;">
+				<option value="" data-img="images/flags/world.svg">Выбрать</option>
+				<option value="DE" data-img="images/flags/de.jpg"> Германия</option>
+				<option value="ES" data-img="images/flags/es.jpg">Испания</option>
+				<option value="PT" data-img="images/flags/pt.jpg">Португалия</option>
+				<option value="US" data-img="images/flags/us.jpg">США</option>
+				<option value="DE" data-img="images/flags/de.jpg">Германия</option>
+				<option value="ES" data-img="images/flags/es.jpg">Испания</option>
+				<option value="PT" data-img="images/flags/pt.jpg">Португалия</option>
+				<option value="US" data-img="images/flags/us.jpg">США</option>
+				<option value="DE" data-img="images/flags/de.jpg">Германия</option>
+			</select>
+		</div>
+		<div class="row">
+			<label class="label">Город</label>
+			<select class="selectbox city" style="width: 100%;" data-placeholder="Выбрать">
+				<option value=""></option>
+				<option value="BER">Берлин</option>
+				<option value="MAD">Мадрид</option>
+				<option value="LIS">Лиссабон</option>
+				<option value="NYC">Нью-Йорк</option>
+			</select>
+		</div>
+		<div class="row">
+			<input id="search_members_only_online" type="checkbox" class="checkbox" checked="">
+			<label for="search_members_only_online" class="wrap-checkbox">Искать только онлайн</label>
+		</div>
+		<div class="row">
+			<div class="buttons second">
+				<a href="#" class="btn">
+					<span class="text">Применить</span>
+				</a>
+				<a href="#" class="btn">
+					<span class="text">Сбросить фильтры</span>
+				</a>
+			</div>
+		</div>
+	</form>
+</div>
