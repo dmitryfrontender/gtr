@@ -13,7 +13,7 @@
 	border: 1px solid rgba(156, 156, 156, 0.20);
 	margin-bottom: 24px;
 
-	@media(max-width: 1024px){
+	@media(max-width: 1023px){
 		padding: 18px;
 	}
 	@media(max-width: 768px){
@@ -89,7 +89,7 @@
 	img {
 		display: block;
 
-		@media(max-width: 1024px){
+		@media(max-width: 1023px){
 			width: 170px;
 		}
 		@media(max-width: 480px){
@@ -122,7 +122,7 @@
 		transition: all .3s ease-in-out;
 	}
 
-	@media(hover: hover) and (pointer: fine){
+	@media screen and (min-width: 1024px) {
 		&:hover{
 			border-color: #FFA31A;
 
@@ -163,7 +163,7 @@
 		0px 22.336px 17.869px 0px rgba(0, 0, 0, 0.04), 0px 12.522px 10.017px 0px rgba(0, 0, 0, 0.04), 0px 6.65px 5.32px 0px rgba(0, 0, 0, 0.03),
 		0px 2.767px 2.214px 0px rgba(0, 0, 0, 0.02);
     }
-    @media(max-width: 1024px){
+    @media(max-width: 1023px){
     	left: -19px;
     }
 	@media(max-width: 768px){
@@ -187,7 +187,7 @@
 		margin-right: 5px;
 	}
 
-	@media(hover: hover) and (pointer: fine){
+	@media screen and (min-width: 1024px) {
 		&:hover{
 			color: #f89427;
 		}
@@ -221,7 +221,7 @@
 		margin-left: 50px;
 	}
 
-	@media(max-width: 1024px){
+	@media(max-width: 1023px){
 		margin-left: 15px;
 	}
 
@@ -312,7 +312,7 @@
 	transform: translate3d(0, -50%, 0);
 	transition: color .3s;
 
-	@media(hover: hover) and (pointer: fine){
+	@media screen and (min-width: 1024px) {
 		&:hover{
 			color: #f89427;
 		}
@@ -354,7 +354,7 @@
 		display: flex;
 		align-items: center;
 
-		@media(hover: hover) and (pointer: fine){
+		@media screen and (min-width: 1024px) {
 			&:hover {
 				color: #f89427;
 
@@ -382,7 +382,7 @@
 		left: auto;
 		right: -31px;
 
-		@media(max-width: 1024px){
+		@media(max-width: 1023px){
 			right: -19px;
 		}
 		@media(max-width: 768px){
@@ -399,7 +399,7 @@
 		background: #35363A;
 		border: none;
 
-		@media(hover: hover) and (pointer: fine){
+		@media screen and (min-width: 1024px) {
 			&:hover{
 				background: linear-gradient(0deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.05) 100%), #35363A;
 			}
@@ -408,7 +408,7 @@
 			margin-left: 4px;
 			background-color: #f89427;
 
-			@media(hover: hover) and (pointer: fine){
+			@media screen and (min-width: 1024px) {
 				&:hover{
 					background: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%), #FFA31A;
 				}
@@ -435,7 +435,7 @@
 		margin-left: 50px;
 
 	}
-	@media(max-width: 1024px){
+	@media(max-width: 1023px){
 		margin-left: 15px;
 	}
 	@media(max-width: 768px){
@@ -569,7 +569,7 @@
 		font-size: 15px;
 		transition: color .3s;
 
-		@media(hover: hover) and (pointer: fine){
+		@media screen and (min-width: 1024px) {
 			&:hover{
 				color: #f89427;
 				.value {
@@ -596,7 +596,7 @@
 			}
 
 
-			@media(hover: hover) and (pointer: fine){
+			@media screen and (min-width: 1024px) {
 				&:hover{
 					color: #f89427;
 

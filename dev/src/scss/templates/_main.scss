@@ -51,7 +51,7 @@
 		}
 	}
 
-	@media(max-width: 1024px){
+	@media(max-width: 1023px){
 		&.cols-4 {
 			flex-direction: column;
 			align-items: flex-start;
@@ -133,13 +133,13 @@
 
 .cols-4 {
 	.headline-btns {
-		@media(max-width: 1024px){
+		@media(max-width: 1023px){
 			margin: 18px 0 0 0;
 			width: 100%;
 			flex-wrap: wrap;
 		}
 		.btn {
-			@media(max-width: 1024px){
+			@media(max-width: 1023px){
 				width: calc(33.333% - 6px);
 
 				&.col-2 {
@@ -167,13 +167,13 @@
 			}
 		}
 		&.mob-lols-2 {
-			@media(max-width: 1024px){
+			@media(max-width: 1023px){
 				margin: 14px -4px 0 -4px;
 				width: calc(100% + 8px);
 			}
 
 			.btn {
-				@media(max-width: 1024px){
+				@media(max-width: 1023px){
 					width: calc(50% - 8px);
 					margin: 4px;
 					text-align: center;
@@ -235,7 +235,7 @@
 		width: 55%;
 		margin-right: 20px;
 
-		@media(max-width: 1024px){
+		@media(max-width: 1023px){
 			width: 50%;
 		}
 		@media(max-width: 640px){
@@ -249,7 +249,7 @@
 		margin-bottom: 24px;
 		text-shadow: 0 0 currentColor;
 
-		@media(max-width: 1024px){
+		@media(max-width: 1023px){
 			margin-bottom: 12px;
 		}
 		@media(max-width: 640px){
@@ -261,7 +261,7 @@
 		color: #8B8B8B;
 		line-height: 1.4;
 
-		@media(max-width: 1024px){
+		@media(max-width: 1023px){
 			font-size: 14px;
 		}
 	}
@@ -274,7 +274,7 @@
 	.right-col {
 		width: 45%;
 
-		@media(max-width: 1024px){
+		@media(max-width: 1023px){
 			width: 50%;
 		}
 		@media(max-width: 640px){
@@ -309,7 +309,7 @@
 		background: #35363A;
 		border: none;
 
-		@media(hover: hover) and (pointer: fine){
+		@media screen and (min-width: 1024px) {
 			&:hover{
 				background: #FFA31A;
 			}
@@ -350,7 +350,7 @@
 		background: transparent;
 		border: 1px solid #fff;
 
-		@media(hover: hover) and (pointer: fine){
+		@media screen and (min-width: 1024px) {
 			&:hover{
 				background: transparent;
 				border-color: #FFA31A;
@@ -361,7 +361,7 @@
 			}
 		}
 
-		@media(max-width: 1024px){
+		@media(max-width: 1023px){
 			&.btn {
 				width: 100%;
 				margin: 0 0 18px 0;
@@ -404,7 +404,7 @@
 	overflow: hidden;
 	z-index: 1;
 
-	@media(hover: hover) and (pointer: fine){
+	@media screen and (min-width: 1024px) {
 		&:hover{
 			&:after {
 				opacity: 1;
@@ -541,7 +541,7 @@
 		@media(max-width: 1200px){
 			padding-left: 5px;
 		}
-		@media(max-width: 1024px){
+		@media(max-width: 1023px){
 			padding-left: 2px;
 			font-size: 18px;
     		margin-bottom: 5px;
@@ -563,7 +563,7 @@
 		@media(max-width: 1200px){
 			font-size: 90px;
 		}
-		@media(max-width: 1024px){
+		@media(max-width: 1023px){
 			font-size: 66px;
 		}
 		@media(max-width: 390px){
@@ -584,7 +584,7 @@
 			line-height: 1.4;
 			font-size: 16px;
 		}
-		@media(max-width: 1024px){
+		@media(max-width: 1023px){
 			font-size: 15px;
 		}
 		.text {
@@ -609,7 +609,7 @@
 		@media(max-width: 1200px){
 			top: 5px;
 		}
-		@media(max-width: 1024px){
+		@media(max-width: 1023px){
 			max-width: 320px;
 		}
 		@media(max-width: 390px){
@@ -630,7 +630,7 @@
 	&.cols-8 {
 		margin: 0 -12px -12px 0;
 
-		@media(max-width: 1024px){
+		@media(max-width: 1023px){
 			max-height: 322px;
 			overflow-x: auto;
 			overflow-y: hidden;
@@ -654,7 +654,7 @@
 			width: calc(12.5% - 12px);
 			margin: 0 12px 12px 0;
 
-			@media(max-width: 1024px){
+			@media(max-width: 1023px){
 				width: 240px;
 				margin: 0 8px 12px 0;
 			}
@@ -675,12 +675,12 @@
 			@media(max-width: 1200px){
 				font-size: 13px;
 			}
-			@media(max-width: 1024px){
+			@media(max-width: 1023px){
 				font-size: 12px;
 			}
 		}
 		&.vertical {
-			@media(max-width: 1024px){
+			@media(max-width: 1023px){
 				max-height: none;
 				flex-wrap: nowrap;
 				display: flex;
@@ -727,7 +727,7 @@
 			@media(max-width: 1200px){
 				font-size: 13px;
 			}
-			@media(max-width: 1024px){
+			@media(max-width: 1023px){
 				font-size: 14px;
 			}
 		}
@@ -749,7 +749,7 @@
 			@media(max-width: 1200px){
 				width: calc(33.333% - 12px);
 			}
-			@media(max-width: 1024px){
+			@media(max-width: 1023px){
 				width: calc(50% - 12px);
 			}
 			@media(max-width: 768px){
@@ -765,7 +765,7 @@
 		.thumb {
 			width: calc(20% - 12px);
 
-			@media(max-width: 1024px){
+			@media(max-width: 1023px){
 				width: calc(25% - 12px);
 			}
 			@media(max-width: 768px){
@@ -783,7 +783,7 @@
 
 .mobile-scroll {
 	.cols-5 {
-		@media(max-width: 1024px){
+		@media(max-width: 1023px){
 			max-height: 446px;
 			overflow-x: auto;
 			overflow-y: hidden;
@@ -803,7 +803,7 @@
 			max-height: 356px;
 		}
 		.thumb {
-			@media(max-width: 1024px){
+			@media(max-width: 1023px){
 				width: 240px;
 			}
 			@media(max-width: 768px){
@@ -818,7 +818,7 @@
 	margin: 0 12px 24px 0;
 	width: calc(25% - 12px);
 
-	@media(hover: hover) and (pointer: fine){
+	@media screen and (min-width: 1024px) {
 		&:hover{
 			.title {
 				color: #FFA31A;
@@ -826,7 +826,7 @@
 		}
 	}
 
-	@media(max-width: 1024px){
+	@media(max-width: 1023px){
 		width: calc(33.333% - 12px);
 	}
 	@media(max-width: 768px){
@@ -869,7 +869,7 @@
 				padding-bottom: 145%;
 			}
 
-			@media(hover: hover) and (pointer: fine){
+			@media screen and (min-width: 1024px) {
 				&:hover{
 					& + .box-info {
 						.name {
@@ -995,7 +995,7 @@
 			}
 		}
 
-		@media(max-width: 1024px){
+		@media(max-width: 1023px){
 			&:nth-last-child(2),
 			&:nth-last-child(3),
 			&:nth-last-child(4) {
@@ -1029,14 +1029,14 @@
 		border: 1px solid transparent;
 		transition: background-color .3s, border-color .3s;
 
-		@media(hover: hover) and (pointer: fine){
+		@media screen and (min-width: 1024px) {
 			&:hover{
 				border-color: #717275;
 				background-color: #424347;
 			}
 		}
 
-		@media(max-width: 1024px){
+		@media(max-width: 1023px){
 			height: 40px;
 			width: 40px;
 			font-size: 14px;
@@ -1047,7 +1047,7 @@
 		width: auto;
 		padding: 0 24px;
 
-		@media(hover: hover) and (pointer: fine){
+		@media screen and (min-width: 1024px) {
 			&:hover{
 				.icon {
 					color: #424346;
@@ -1057,7 +1057,7 @@
 			}
 		}
 
-		@media(max-width: 1024px){
+		@media(max-width: 1023px){
 			padding: 0 15px;
 		}
 
@@ -1091,7 +1091,7 @@
 	.link {
 		transition: color .3s;
 
-		@media(hover: hover) and (pointer: fine){
+		@media screen and (min-width: 1024px) {
 			&:hover{
 				color: #FFA31A;
 			}
@@ -1113,7 +1113,7 @@
 		font-size: 14px;
 		border-color: transparent;
 
-		@media(hover: hover) and (pointer: fine){
+		@media screen and (min-width: 1024px) {
 			&:hover{
 				border-color: #FFA31A;
 
@@ -1230,7 +1230,7 @@
 			border-radius: 8px;
 			transition: background-color .3s, color .3s;
 
-			@media(hover: hover) and (pointer: fine){
+			@media screen and (min-width: 1024px) {
 				&:hover{
 					background-color: #323336;
 				}
@@ -1304,7 +1304,7 @@
 				& + .btn {
 					background-color: #35363A;
 
-					@media(hover: hover) and (pointer: fine){
+					@media screen and (min-width: 1024px) {
 						&:hover{
 							background-color: #FFA31A;
 						}
@@ -1320,7 +1320,7 @@
 			font-size: 14px;
 			transition: background-color .3s, border-color .3s;
 
-			@media(hover: hover) and (pointer: fine){
+			@media screen and (min-width: 1024px) {
 				&:hover{
 					border-color: #2F3035;
 					background-color: #2F3035;
@@ -1481,7 +1481,7 @@
 		@media(max-width: 1200px){
 			width: calc(33.333% - 12px);
 		}
-		@media(max-width: 1024px){
+		@media(max-width: 1023px){
 			width: calc(50% - 12px);
 		}
 		@media(max-width: 768px){
@@ -1499,7 +1499,7 @@
 		&.second {
 			padding-bottom: 24px;
 
-			@media(max-width: 1024px){
+			@media(max-width: 1023px){
 				padding-bottom: 18px;
 			}
 		}
@@ -1507,7 +1507,7 @@
 		.title-holder {
 			font-size: 30px;
 
-			@media(max-width: 1024px){
+			@media(max-width: 1023px){
 				font-size: 24px;
 			}
 		}
@@ -1946,7 +1946,7 @@
 		margin-right: 24px;
 		font-size: 96px;
 
-		@media(max-width: 1024px){
+		@media(max-width: 1023px){
 			width: 120px;
 			height: 120px;
 			font-size: 72px;
@@ -1972,7 +1972,7 @@
 		font-size: 24px;
 		margin-bottom: 20px;
 
-		@media(max-width: 1024px){
+		@media(max-width: 1023px){
 			font-size: 18px;
 			margin-bottom: 10px;
 		}
@@ -2045,7 +2045,7 @@ textarea.textfield {
 		border-color: transparent;
 		padding: 20px 10px;
 
-		@media(hover: hover) and (pointer: fine){
+		@media screen and (min-width: 1024px) {
 			&:hover{
 				background-color: #35363A;
 			}
@@ -2104,7 +2104,7 @@ textarea.textfield {
 	justify-content: center;
 	overflow-y: auto;
 
-	@media(max-width: 1024px){
+	@media(max-width: 1023px){
 		padding: 10px;
 	}
 
@@ -2131,7 +2131,7 @@ textarea.textfield {
 		flex-direction: column;
 		margin: 0 10px;
 
-		@media(max-width: 1024px){
+		@media(max-width: 1023px){
 			width: 100%;
 			margin: 0;
 
@@ -2148,7 +2148,7 @@ textarea.textfield {
 		background: #1A1B1F;
 		position: relative;
 
-		@media(max-width: 1024px){
+		@media(max-width: 1023px){
 			border-radius: 0;
 			border: none;
 			padding: 10px;
@@ -2171,7 +2171,7 @@ textarea.textfield {
 			border: 1px solid rgba(255, 255, 255, 0.05);
 			transition: border-color .3s, color .3s;
 
-			@media(hover: hover) and (pointer: fine){
+			@media screen and (min-width: 1024px) {
 				&:hover{
 					border-color: #FFA31A;
 					color: #FFA31A;
@@ -2182,7 +2182,7 @@ textarea.textfield {
 				top: 20px;
 				right: 20px;
 			}
-			@media(max-width: 1024px){
+			@media(max-width: 1023px){
 				top: 10px;
 				right: 10px;
 			}
@@ -2248,7 +2248,7 @@ textarea.textfield {
 			font-size: 15px;
 			transition: color .3s;
 
-			@media(hover: hover) and (pointer: fine){
+			@media screen and (min-width: 1024px) {
 				&:hover{
 					color: #FFA31A;
 				}
@@ -2383,7 +2383,7 @@ textarea.textfield {
 		transition: background-color .3s;
 		font-size: 16px;
 
-		@media(hover: hover) and (pointer: fine){
+		@media screen and (min-width: 1024px) {
 			&:hover{
 				background-color: #FFA31A;
 			}
@@ -2409,7 +2409,7 @@ textarea.textfield {
 		color: #707070;
 		transition: color .3s;
 
-		@media(hover: hover) and (pointer: fine){
+		@media screen and (min-width: 1024px) {
 			&:hover{
 				color: #FFA31A;
 			}
@@ -2566,7 +2566,7 @@ textarea.textfield {
 			}
 		}
 
-		@media(hover: hover) and (pointer: fine){
+		@media screen and (min-width: 1024px) {
 			&:hover{
 				background: #323336;
 
@@ -2685,7 +2685,7 @@ textarea.textfield {
 	margin: 2px;
 	transition: background-color .3s;
 
-	@media(hover: hover) and (pointer: fine){
+	@media screen and (min-width: 1024px) {
 		&:hover{
 			background: #3E3E42;
 		}
@@ -2701,7 +2701,7 @@ textarea.textfield {
 	display: flex;
 	flex-wrap: wrap;
 
-	@media(max-width: 1024px){
+	@media(max-width: 1023px){
 		flex-wrap: nowrap;
 		overflow-x: auto;
 		scrollbar-width: none;
@@ -2711,20 +2711,23 @@ textarea.textfield {
   			display: none;
 		}
 	}
-	.btn {
-		background: #35363A;
+	.checkbox-holder {
 		margin: 0 4px 4px 0;
-		font-size: 14px;
-		padding: 7px 12px;
 
-		@media(max-width: 1024px){
-			white-space: nowrap;
-		}
-
-		.svg-icon {
-			flex-shrink: 0;
-			font-size: 20px;
-			margin-right: 8px;
+		.btn {
+			background: #35363A;
+			font-size: 14px;
+			padding: 7px 32px 7px 12px;
+	
+			@media(max-width: 1023px){
+				white-space: nowrap;
+			}
+	
+			.svg-icon {
+				flex-shrink: 0;
+				font-size: 20px;
+				margin-right: 8px;
+			}
 		}
 	}
 }
@@ -2761,7 +2764,7 @@ textarea.textfield {
 		width: 100%;
 		margin-top: 20px;
 
-		@media(hover: hover) and (pointer: fine){
+		@media screen and (min-width: 1024px) {
 			&:hover{
 				background-color: #26272C;
 			}
@@ -2809,7 +2812,7 @@ textarea.textfield {
 		}
 	}
 
-	@media(max-width: 1024px){
+	@media(max-width: 1023px){
 		width: 300px;
 	}
 	@media(max-width: 768px){
@@ -2883,7 +2886,7 @@ textarea.textfield {
 			display: inline-block;
 			transition: color .3s;
 
-			@media(hover: hover) and (pointer: fine){
+			@media screen and (min-width: 1024px) {
 				&:hover{
 					color: #f89427;
 				}
@@ -2961,7 +2964,7 @@ textarea.textfield {
 	cursor: pointer;
 	flex-shrink: 0;
 
-	@media(hover: hover) and (pointer: fine){
+	@media screen and (min-width: 1024px) {
 		&:hover{
 			.dot {
 				background-color: #f89427;
@@ -3023,7 +3026,7 @@ textarea.textfield {
 				stroke: #FFA31A;
 			}
 
-			@media(hover: hover) and (pointer: fine){
+			@media screen and (min-width: 1024px) {
 				&:hover{
 					stroke: #FFA31A;
 				}
@@ -3044,7 +3047,7 @@ textarea.textfield {
 		font-size: 24px;
 		transition: background-color .3s;
 
-		@media(hover: hover) and (pointer: fine){
+		@media screen and (min-width: 1024px) {
 			&:hover{
 				background-color: #FFA31A;
 			}
@@ -3103,7 +3106,7 @@ textarea.textfield {
 	cursor: pointer;
 	transition: stroke .3s;
 
-	@media(hover: hover) and (pointer: fine){
+	@media screen and (min-width: 1024px) {
 		&:hover{
 			stroke: #FFA31A;
 		}
@@ -3130,7 +3133,7 @@ textarea.textfield {
 		width: 20%;
 		margin: 0 2px;
 
-		@media(hover: hover) and (pointer: fine){
+		@media screen and (min-width: 1024px) {
 			&:hover{
 				color: #FFA31A;
 				.svg-icon {
@@ -3211,7 +3214,7 @@ textarea.textfield {
 			}
 		}
 
-		@media(hover: hover) and (pointer: fine){
+		@media screen and (min-width: 1024px) {
 			&:hover{
 				background-color: #323336;
 			}
@@ -3429,6 +3432,6 @@ textarea.textfield {
 }
 
 .scroll-box {
-	max-height: 480px;
+	// max-height: 480px;
 	padding-right: 10px;
 }

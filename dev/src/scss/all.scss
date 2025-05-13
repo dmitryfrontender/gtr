@@ -33,10 +33,6 @@ body{
 a{
 	color:$link_color;
 	text-decoration:none;
-	// &:hover{
-	// 	text-decoration:underline;
-	// 	color:$link_hover_color;
-	// }
 }
 
 input{
@@ -159,7 +155,7 @@ textarea:-ms-input-placeholder {
 }
 
 .container{
-	max-width: 1840px;
+	// max-width: 1840px;
 	margin: 0 auto;
 	padding: 0 20px;
 	@media(max-width: 768px){
@@ -177,7 +173,7 @@ textarea:-ms-input-placeholder {
 	border: 1px solid #35363A;
 	transition: background-color .3s, color .3s, border-color .3s;
 
-	@media(hover: hover) and (pointer: fine){
+	@media screen and (min-width: 1024px) {
 		&:hover{
 			border-color: #FFA31A;
 		}

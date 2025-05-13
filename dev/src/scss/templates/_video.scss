@@ -38,7 +38,7 @@
                         height: 58px;
                     }
 
-                    @media screen and (max-width: 1024px) {
+                    @media screen and (max-width: 1023px) {
                         width: 90px;
                         height: 90px;
 
@@ -85,7 +85,7 @@
                 white-space: nowrap;
             }
 
-            @media screen and (max-width: 1024px) {
+            @media screen and (max-width: 1023px) {
                 max-width: initial;
                 width: 100%;
 
@@ -99,7 +99,7 @@
             align-items: center;
             gap: 12px;
 
-            @media screen and (max-width: 1024px) {
+            @media screen and (max-width: 1023px) {
                 width: 100%;
                 flex-wrap: wrap;
             }
@@ -123,7 +123,7 @@
                 font-weight: 600;
                 letter-spacing: -0.28px;
 
-                @media screen and (max-width: 1024px) {
+                @media screen and (max-width: 1023px) {
                     padding: 5px 5px;
                 }
             }
@@ -153,7 +153,7 @@
                     transition: all .3s ease;
                 }
 
-                @media screen and (max-width: 1024px) {
+                @media screen and (max-width: 1023px) {
                     padding: 5px 5px;
                 }
             }
@@ -257,7 +257,7 @@
         align-items: center;
         gap: 48px;
 
-        @media screen and (max-width: 1024px) {
+        @media screen and (max-width: 1023px) {
             flex-wrap: wrap;
             gap: 12px;
         }
@@ -371,11 +371,20 @@
             }
         }
     }
+
+    .info-block {
+        .description {
+            font-weight: 400;
+        }
+    }
 }
 
 .video-details {
     max-width: 1000px;
     margin-bottom: 36px;
+    background-color: #272727;
+    padding: 20px;
+    border-radius: 8px;
 
     .rating-container {
         .like-icon {
@@ -412,7 +421,7 @@
             border-radius: 8px;
             color: #FFF;
             font-size: 14px;
-            font-weight: 600;
+            font-weight: 400;
             letter-spacing: -0.28px;
             border-radius: 8px;
 
