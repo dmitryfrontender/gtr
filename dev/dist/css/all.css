@@ -2226,7 +2226,7 @@ textarea:-ms-input-placeholder {
 		right: 2%;
 	}
 }
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
 	.blur:after {
 		top: -100%;
 		right: -6%;
