@@ -526,6 +526,10 @@
 		display: none;
 		margin-top: 12px;
 	}
+
+	@media(min-width: 1920px){
+		justify-content: center;
+	}
 }
 
 .drop {
